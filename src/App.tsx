@@ -2,9 +2,43 @@ import { Mail, Github, Linkedin, MapPin, Briefcase, GraduationCap, Code2, Sparkl
 import BentoCard from './components/BentoCard';
 import ProjectCard from './components/ProjectCard';
 import SkillBadge from './components/SkillBadge';
+import ProjectSlider from './components/ProjectSlider';
 
 function App() {
   const skills = ['React', 'TypeScript', 'Node.js', 'Python', 'SQL', 'TailwindCSS', 'Git'];
+
+  const sliderProjects = [
+    {
+      id: 1,
+      title: 'E-commerce Platform',
+      description: 'Plataforma completa de comercio electrónico con sistema de carrito de compras, pasarela de pagos integrada y panel de administración avanzado',
+      mediaUrl: 'https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1920',
+      mediaType: 'image' as const,
+      ctaText: 'Ver Proyecto',
+      ctaLink: '#',
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS']
+    },
+    {
+      id: 2,
+      title: 'Task Manager Pro',
+      description: 'Aplicación de gestión de tareas con colaboración en tiempo real, notificaciones push y sincronización multi-dispositivo',
+      mediaUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      mediaType: 'image' as const,
+      ctaText: 'Explorar Demo',
+      ctaLink: '#',
+      technologies: ['TypeScript', 'Supabase', 'React', 'Tailwind']
+    },
+    {
+      id: 3,
+      title: 'Analytics Dashboard',
+      description: 'Dashboard interactivo para visualización de datos empresariales con gráficos en tiempo real y reportes personalizables',
+      mediaUrl: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      mediaType: 'image' as const,
+      ctaText: 'Ver Demo',
+      ctaLink: '#',
+      technologies: ['React', 'D3.js', 'Python', 'Docker']
+    }
+  ];
 
   const projects = [
     {
@@ -57,6 +91,10 @@ function App() {
               </div>
             </div>
           </BentoCard>
+
+          <div className="md:col-span-8">
+            <ProjectSlider projects={sliderProjects} />
+          </div>
 
           <BentoCard className="md:col-span-5 bg-white">
             <div className="flex items-start gap-3 mb-4">
