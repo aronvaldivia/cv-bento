@@ -116,6 +116,16 @@ function App() {
                 <p className="text-sm text-gray-600">Startup Inc • 2020 - 2022</p>
                 <p className="text-sm text-gray-700 mt-2">Construcción de productos desde cero y optimización de rendimiento.</p>
               </div>
+               <div className="border-l-2 border-emerald-500 pl-4">
+                <h3 className="font-semibold text-gray-900">Senior Developer</h3>
+                <p className="text-sm text-gray-600">Tech Company • 2022 - Presente</p>
+                <p className="text-sm text-gray-700 mt-2">Desarrollo de aplicaciones web escalables y liderazgo de equipo técnico.</p>
+              </div>
+               <div className="border-l-2 border-emerald-500 pl-4">
+                <h3 className="font-semibold text-gray-900">Senior Developer</h3>
+                <p className="text-sm text-gray-600">Tech Company • 2022 - Presente</p>
+                <p className="text-sm text-gray-700 mt-2">Desarrollo de aplicaciones web escalables y liderazgo de equipo técnico.</p>
+              </div>
             </div>
           </BentoCard>
 
